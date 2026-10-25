@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Waylo | Find Your Next Adventure</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="navbar">
+
+        <a href="#" class="logo">
+            <img src="images/waylo_logo.png" alt="Waylo logo">
+            <span>Waylo</span>
+        </a>
+
+        <form class="nav-search" action="#">
+            <span><i class="fa-solid fa-magnifying-glass" style="color: rgb(12, 11, 11);"></i></span>
+            <input type="search" placeholder="Search cities, destinations...">
+            <button type="submit" aria-label="Search"><i class="fa-solid fa-magnifying-glass"
+                    style="color: rgb(255, 255, 255);"></i></button>
+        </form>
+
+        <nav class="nav-links">
+            <a href="#hotels">Hotels</a>
+            <a href="#flights">Flights</a>
+            <a href="#restaurants">Restaurants</a>
+            <a href="#activities">Activities</a>
+        </nav>
+
+        <div class="auth-buttons">
+            <a href="#login-modal" class="login-btn">Log in</a>
+            <a href="#signup-modal" class="signup-btn">Sign Up</a>
+        </div>
+
+        <button class="menu-btn" aria-label="Menu"><i class="fa-solid fa-bars" style="color: rgb(12, 11, 11);"></i>
+        </button>
+
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+                <p class="eyebrow">EXPLORE · STAY · TASTE · EXPERIENCE</p>
+
+                <h1>Find Your<br>Next Adventure</h1>
+
+                <p class="hero-description">
+                    Discover amazing destinations, handpicked stays,
+                    and unforgettable experiences — all in one place.
+                </p>
+            </div>
+
+            <!-- MAIN SEARCH FORM -->
+            <form class="travel-search" action="#destinations">
+
+                <div class="search-field destination-field">
+                    <label> <i class="fa-solid fa-location-dot" style="color: rgb(12, 11, 11);"></i> Destination</label>
+                    <input id="destination" type="search" placeholder="Search cities or destinations">
+                    <small>e.g. Bali, Paris, Dubai</small>
+                </div>
+
+                <div class="search-field">
+                    <label><i class="fa-solid fa-calendar" style="color: rgb(12, 11, 11);"></i> Check-in -
+                        Check-out</label>
+                    <input id="dates" type="text" placeholder="Add dates" onfocus="this.type='date'">
+                </div>
+
+                <div class="search-field">
+                    <label><i class="fa-solid fa-user" style="color: rgb(12, 11, 11);"></i> Guests</label>
+                    <select id="guests">
+                        <option>2 Guests - 1 Room</option>
+                        <option>1 Guest - 1 Room</option>
+                        <option>3 Guests - 1 Room</option>
+                        <option>4 Guests - 2 Rooms</option>
+                    </select>
+                </div>
+
+                <div class="search-field">
+                    <label>Price Range</label>
+                    <select id="price">
+                        <option>Any price</option>
+                        <option>Under ₹5,000</option>
+                        <option>₹5,000-₹15,000</option>
+                        <option>Above ₹15,000</option>
+                    </select>
+                </div>
+
+                <div class="search-field">
+                    <label for="rating">Rating</label>
+                    <select id="rating">
+                        <option>Any rating</option>
+                        <option>⭐⭐⭐+ stars</option>
+                        <option>⭐⭐⭐⭐+ stars</option>
+                        <option>⭐⭐⭐⭐⭐stars</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="search-submit">
+                    <i class="fa-solid fa-magnifying-glass" style="color: rgb(249, 249, 249);"></i>Search
+                </button>
+
+            </form>
+        </section>
+
+
+        <!-- TRAVEL CATEGORIES -->
+        <section class="categories" id="activities">
+
+            <a href="#hotels" class="category">
+                <span class="category-icon"><i class="fa-solid fa-hotel" style="color: rgb(12, 11, 11);"></i></span>
+                <span>
+                    <strong>Hotels</strong>
+                    <small>Comfortable stays<br>for every traveler</small>
+                </span>
+            </a>
+
+            <a href="#flights" class="category">
+                <span class="category-icon"><i class="fa-solid fa-plane" style="color: rgb(12, 11, 11);"></i></span>
+                <span>
+                    <strong>Flights</strong>
+                    <small>Best deals,<br>wide options</small>
+                </span>
+            </a>
+
+            <a href="#restaurants" class="category">
+                <span class="category-icon"><i class="fa-solid fa-bowl-rice" style="color: rgb(12, 11, 11);"></i></span>
+                <span>
+                    <strong>Restaurants</strong>
+                    <small>Top-rated dining<br>experiences</small>
+                </span>
+            </a>
+
+            <a href="#experiences" class="category">
+                <span class="category-icon"><i class="fa-solid fa-person-swimming"
+                        style="color: rgb(12, 11, 11);"></i></span>
+                <span>
+                    <strong>Activities</strong>
+                    <small>Explore, experience,<br>create memories</small>
+                </span>
+            </a>
+
+        </section>
+
+
+        <!-- FEATURED DESTINATIONS -->
+        <section class="content-section" id="destinations">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">FEATURED DESTINATIONS</p>
+                    <h2>Explore Dream Destinations</h2>
+                </div>
+            </div>
+
+            <div class="card-grid destination-grid">
+
+                <article class="travel-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?auto=format&fit=crop&w=700&q=85"
+                            alt="Santorini blue domes and sea">
+                        <span class="rating">★ 4.8</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Santorini, Greece</h3>
+                        <p>Island · Beaches · Culture</p>
+                    </div>
+                </article>
+
+                <article class="travel-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=700&q=85"
+                            alt="Maldives tropical overwater villas">
+                        <span class="rating">★ 4.7</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Maldives</h3>
+                        <p>Beaches · Luxury · Relaxation</p>
+                    </div>
+                </article>
+
+                <article class="travel-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=700&q=85"
+                            alt="Paris city view">
+                        <span class="rating">★ 4.6</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Paris, France</h3>
+                        <p>Culture · Food · Romance</p>
+                    </div>
+                </article>
+
+                <article class="travel-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=700&q=85"
+                            alt="Bali green tropical landscape">
+                        <span class="rating">★ 4.5</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Bali, Indonesia</h3>
+                        <p>Nature · Wellness · Adventure</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- POPULAR HOTELS -->
+        <section class="content-section" id="hotels">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">POPULAR HOTELS</p>
+                    <h2>Stays Worth Discovering</h2>
+                    <p class="section-subtitle">Handpicked stays for a perfect getaway</p>
+                </div>
+            </div>
+
+            <div class="card-grid">
+
+                <article class="travel-card hotel-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=700&q=85"
+                            alt="Luxury resort swimming pool">
+                        <span class="rating">★ 4.9</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>The Ritz-Carlton, Bali</h3>
+                        <p> Bali, Indonesia</p>
+                        <div class="price-row">
+                            <strong>$280 <small>/ night</small></strong>
+                            <a href="#login" class="details-btn">View details</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="travel-card hotel-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=700&q=85"
+                            alt="Elegant luxury hotel">
+                        <span class="rating">★ 4.8</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Taj Lake Palace</h3>
+                        <p> Udaipur, India</p>
+                        <div class="price-row">
+                            <strong>$320 <small>/ night</small></strong>
+                            <a href="#login" class="details-btn">View details</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="travel-card hotel-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=700&q=85"
+                            alt="Singapore skyline">
+                        <span class="rating">★ 4.7</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Marina Bay Sands</h3>
+                        <p> Singapore</p>
+                        <div class="price-row">
+                            <strong>$450 <small>/ night</small></strong>
+                            <a href="#login" class="details-btn">View details</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="travel-card hotel-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=700&q=85"
+                            alt="Beautiful hotel resort">
+                        <span class="rating">★ 4.6</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Four Seasons Resort</h3>
+                        <p> Kyoto, Japan</p>
+                        <div class="price-row">
+                            <strong>$390 <small>/ night</small></strong>
+                            <a href="#login" class="details-btn">View details</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- RESTAURANTS -->
+        <section class="content-section" id="restaurants">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">TOP-RATED RESTAURANTS</p>
+                    <h2>Taste the Extraordinary</h2>
+                    <p class="section-subtitle">Taste the best, wherever you go</p>
+                </div>
+            </div>
+
+            <div class="card-grid">
+
+                <article class="travel-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=85"
+                            alt="Fine dining restaurant">
+                        <span class="rating">★ 4.9</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>The Yellow Chilli</h3>
+                        <p>⌖ Chennai, India</p>
+                        <p>Indian · North Indian</p>
+                    </div>
+                </article>
+
+                <article class="travel-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=700&q=85"
+                            alt="Japanese sushi dishes">
+                        <span class="rating">★ 4.8</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Sushi Samba</h3>
+                        <p>⌖ Singapore</p>
+                        <p>Japanese · Fusion</p>
+                    </div>
+                </article>
+
+                <article class="travel-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=700&q=85"
+                            alt="Restaurant table and food">
+                        <span class="rating">★ 4.7</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Le Petit Chef</h3>
+                        <p>⌖ Dubai, UAE</p>
+                        <p>French · International</p>
+                    </div>
+                </article>
+
+                <article class="travel-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=85"
+                            alt="Warm and inviting restaurant">
+                        <span class="rating">★ 4.6</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Da Paolo</h3>
+                        <p>⌖ Amalfi, Italy</p>
+                        <p>Italian · Pizza · Pasta</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- EXPERIENCES -->
+        <section class="experience-banner" id="experiences">
+            <div>
+                <p class="eyebrow">MAKE EVERY MOMENT COUNT</p>
+                <h2>Your next story starts here.</h2>
+                <p>Discover experiences that make every journey unforgettable.</p>
+            </div>
+            <a href="#destinations" class="experience-btn">Explore experiences →</a>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-brand">
+            <a href="#" class="logo footer-logo">
+                <img src="images/logo2.jpeg" alt="">
+                <span>waylo</span>
+            </a>
+            <p>More journeys. Better stories.</p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <a href="#">Home</a>
+            <a href="#hotels">Hotels</a>
+            <a href="#flights">Flights</a>
+            <a href="#restaurants">Restaurants</a>
+            <a href="#activities">Activities</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Support</h4>
+            <a href="#help">Help Center</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#terms">Terms & Conditions</a>
+            <a href="#privacy">Privacy Policy</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+                <a href="#instagram" aria-label="Instagram"><i class="fa-brands fa-square-instagram"
+                        style="color: rgb(244, 241, 241);"></i></a>
+                <a href="#facebook" aria-label="Facebook"><i class="fa-brands fa-facebook"
+                        style="color: rgb(244, 2411, 241);"></i></a>
+                <a href="#youtube" aria-label="YouTube"><i class="fa-brands fa-youtube"
+                        style="color: rgb(240, 241, 241);"></i></a>
+            </div>
+        </div>
+
+        <div class="newsletter">
+            <h4>Get travel inspiration</h4>
+            <p>Discover new places and travel stories.</p>
+            <form action="#">
+                <input type="email" placeholder="Your email address">
+                <button type="submit" aria-label="Subscribe">→</button>
+            </form>
+        </div>
+
+        <p class="copyright">© 2026 Waylo. All rights reserved.</p>
+
+    </footer>
+    <!-- LOGIN POPUP -->
+    <div class="login-modal" id="login-modal">
+        <div class="login-box">
+
+            <a href="#" class="close-btn">&times;</a>
+
+            <h2>Welcome Back!</h2>
+            <p>Continue your journey with Waylo.</p>
+
+            <form>
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" placeholder="Enter your email" required>
+
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" placeholder="Enter your password" required>
+
+                <button type="submit">Log In</button>
+            </form>
+
+            <p class="signup-text">
+                New to Waylo?
+                <a href="#">Sign up</a>
+            </p>
+
+        </div>
+    </div>
+
+
+    <!-- SIGNUP POPUP -->
+    <div class="login-modal" id="signup-modal">
+        <div class="login-box">
+
+            <a href="#" class="close-btn">&times;</a>
+
+            <h2>Join Waylo!</h2>
+            <p>Start planning your next adventure.</p>
+
+            <form>
+                <label for="signup-name">Full Name</label>
+                <input type="text" id="signup-name" placeholder="Enter your name" required>
+
+                <label for="signup-email">Email Address</label>
+                <input type="email" id="signup-email" placeholder="Enter your email" required>
+
+                <label for="signup-password">Create Password</label>
+                <input type="password" id="signup-password" placeholder="Create a password" required>
+
+                <button type="submit">Create Account</button>
+            </form>
+
+            <p class="signup-text">
+                Already have an account?
+                <a href="#login-modal">Log in</a>
+            </p>
+
+        </div>
+    </div>
+
+
+
+</body>
+
+
+
+</html>
